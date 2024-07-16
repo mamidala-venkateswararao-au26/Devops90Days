@@ -1,0 +1,45 @@
+ABOUT GIT:
+...................................................
+
+GIT   : Distributed 
+
+SUN and CVS  : Centerlized 
+
+
+Differnce between Git and Github  :
+
+
+Git                                            :                                 GitHub
+
+1) Git is Distributed Control System.
+2) Git is OpenSource
+3)It allows multiple developers to work together.
+
+
+
+
+
+
+Git Diff:
+git diff is used find what changes has made in that file...
+
+
+Git log:
+this command is used to find the commit's of your code..history of commit's...
+
+git reset --hard:
+this command is used to if you want to work your previous commit use the git reset --hard ---------> give the commit id. after that check the file using the cat filename.txt...
+
+
+Git Branching:
+
+Branching  is nothing but separation and creating the new branches any new feature that you are working on existing branches finally you are going to merge in master branch..
+
+3 types of branches..
+master branch 
+feature branch 
+release branch
+
+How to create or intilize a git repository
+
+
