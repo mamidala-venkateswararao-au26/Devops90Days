@@ -1,3 +1,9 @@
 IAM : IDENTITY ACESS MANAGEMENT
 
 
+Users  : in IAM users represent individual peoples that intreact with AWS resourses. Each user has uniqe name credential 
+
+Policies
+Groups
+
+
