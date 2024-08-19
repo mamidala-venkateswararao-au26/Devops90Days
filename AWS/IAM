@@ -3,7 +3,13 @@ IAM : IDENTITY ACESS MANAGEMENT
 
 Users  : in IAM users represent individual peoples that intreact with AWS resourses. Each user has uniqe name credential 
 
-Policies
-Groups
+
+
+IAM allows you to create and manage users, groups, and roles. Users represent individual people or entities who need access to your AWS resources. Groups are collections of users with similar access requirements, making it easier to manage permissions. Roles are used to grant temporary access to external entities or services.
+
+Policies:
+
+
+Groups:
 
 
