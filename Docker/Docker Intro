@@ -1,1 +1,51 @@
-D
+Docker :
+
+ENV: env is nothing but collection of certen things. Which are rtequire to day to day operations.
+
+certen things --> ram,os,HD,IDE,java base application,python base applications
+
+Libraries : Libraries are nothuing but files which are need to run to applications. or supporting files for your applications.
+
+
+I want to develop one applaction:
+
+Dev will work on application (ex: cal) .
+|
+|
+once dev is done next process is Build process --> to cobaining differnt feature to one applaction. it appeare .exe file like this.
+
+Testing team will come --> check wheather all the feathers are working fine are not..
+
+Pre Proud
+UAT
+RFS --> ready for service
+
+There is problem with ENV ..   -> Application is running in Dev but not working in Testing team .. there is problem with EnV
+second problem is Multipule copies same application is not possible.
+
+In Such a case CONTAINERS comes to the pictures.
+
+--------------------------------------------------------------------------------
+
+Containers:
+It is used for storage purpose,. it won't mix.. Isolated area.
+
+container is nothing but vartual box . we can create deployable product. it conataine App plus ENv and i won't mix with another app. and isolated are 
+this means this is not mix with others. and same time we create multipule copies of applications.
+
+
+
+
+
+Containers :  -> Copy1    copy2   copy3        --> step4
+              -> Applications(Ansible,Python)  --> step3
+              ->Operating System(Linux)       --> step2
+              -> Vartuval Michine (EC2)        -> step1
+
+Docker : Docker is containarazion tool which is used to create the containers. 
+
+
+
+
+
+
