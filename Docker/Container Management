@@ -1,3 +1,132 @@
 This is 2nd class..
 
 Technical meaning of containers..  --> containers is nothing but process .. which is creat vartial box. 
+
+Empty containers can be crated .. container is nothing but process.. process cannot be empty..
+
+How to craete containers.?
+
+Docker is tool to crate containers.. Contanizeration is tech.. docker is part of technology.. build ,test,deploy the aplication asolated are..
+we can create mutlipule copies. 
+
+DOCKER ARCTITURE OR COMPONENTES..
+
+
+3 Things..
+
+Docker Demon (Docker Engine) : Docker Demon is heart of Docker.. we can call it as a king of Empiror.
+bakgroumd process.. which is responceble for all the process and all the operations....
+
+Docker CLI : We cannot directly meet docker engine directly..there docker CLI (command line interface) helps to communicate
+with docker engine..
+
+Docker Images: in docker there are some images available.. take that images create empty container put the image into empty container..
+Images is nothng but inside image app+ Env everything will be kept under the image.
+
+Docker Registry: nothing but a place.. where all images are available.. Centralized repositary..
+
+
+3 parts;
+
+Container management :-> 
+Image managemant
+Container orchistaration
+
+\
+/
+\         Container Management:
+/
+Docker Installation:
+-----------------------------------------------------------------------------------------------------------------------------------
+Install using the apt repository
+Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker apt repository. Afterward, you can install and update Docker from the repository.
+
+Set up Docker's apt repository.
+
+
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+Install the Docker packages.
+
+Latest Specific version
+To install the latest version, run:
+
+
+ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+Verify that the installation is successful by running the hello-world image:
+
+
+ sudo docker run hello-world
+-----------------------------------------------------------------------------------------------------------------------------
+Docker info  --> if this command is working after the installations.. it means docker CLI communicate with docker demon..
+
+
+Container creating 2 ways  --> Attached mode crateing
+                           --> Detache mode creating
+
+Commands of container managemant
+---------------------------------
+
+docker run --> use to creat the cotainer. it create empty container.
+
+docker run <image> :
+once the run above command fallowing deatiles wiil be create.
+create container
+uniqu id to container
+start the container
+attach the container or go inside the container.
+
+--> docker run -it centos        --> if image is not in locally it pulls from central reposatory.
+
+once the image is pull is complete it will allow you inside the container,..
+
+exit is the command to come out of the conatiner..
+
+docker run -it centos   --> if you run this command again it's alredy presnt in locally .. if not so they go docker registory. download the 
+image and create the container..
+
+and once you are in inside the containmer it will beisloted and it is pravite.
+
+
+docker ps   _> all the only running conatiner .
+docker ps -a -> all the running and hidden containers will show..
+
+
+docker run -it --name devops centos        -> this will create centos image along with that devops name wwill be desplayed..(container name)
+
+login container:
+(docker start name/id) 
+(docker attach name/id)
+
+--> docker start devops
+--> docker attach dvops
+
+-it   --> interactive mode..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
